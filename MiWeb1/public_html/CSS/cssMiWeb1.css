@@ -51,3 +51,9 @@ and open the template in the editor.
     float: left;
     padding: 15px;
 }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
