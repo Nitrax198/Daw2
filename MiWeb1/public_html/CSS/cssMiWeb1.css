@@ -26,6 +26,7 @@ and open the template in the editor.
 .col-5 {
     width: 41.66%;
     background-color: brown;
+    height: 250px;
 }
 .col-6 {
     width: 50%;
@@ -61,7 +62,10 @@ and open the template in the editor.
 .Centrao{
     float:none;
     margin:auto;
-    margin-top: 33%;
+    margin-top: 20%;
     border: solid 1px black;
     background-color: bisque;
+}
+video{
+    width: 100%;
 }
