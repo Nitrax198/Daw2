@@ -22,7 +22,7 @@ if (plantilla.test(telf)) {
 
 var plantilla2 = new RegExp(/^91[0-9]{7}$/g);
 var telf2 = prompt("Escribe un numero de la comunidad de madrid", "911234567");
-if (plantilla2.test(telf)) {
+if (plantilla2.test(telf2)) {
     alert("El numero es correcto");
 } else {
     alert("El numero es incorrecto");
