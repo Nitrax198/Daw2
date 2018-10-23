@@ -142,6 +142,7 @@ despliegan, el color el estar centrados etc*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
     display: block;
+    color: #ffffff;
 }
 .sidenav a {
     padding: 6px 8px 6px 16px;
@@ -159,7 +160,7 @@ despliegan, el color el estar centrados etc*/
     margin-left: 180px; /* Same as the width of the sidebar */
     padding: 0px 10px;
     top: 200px;
-    color: wheat;
+    color: #ffffff;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
