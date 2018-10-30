@@ -22,5 +22,8 @@
 
 //Programa que muestre en el titulo valores del 0 al 12, cuando llege al 12 tiene que volver al 0, a razon de dos numeros cada segundo
 
+//alert(Math.floor((Math.random()*(2))+2));
+alert(Math.floor((Math.random()*(51
+        ))+200));
 
 
