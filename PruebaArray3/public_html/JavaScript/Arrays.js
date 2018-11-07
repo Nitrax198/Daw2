@@ -54,7 +54,7 @@ do {
         contador++;
     }
     salida = confirm("¿Quieres Seguir?");
-} while (salida);
+} while (salida);  
 
 for (var i = 0; i < estadisticas.length; i++) {
     if (estadisticas[i][0] === 2015) {
