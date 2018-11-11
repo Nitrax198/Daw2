@@ -7,6 +7,20 @@ and open the template in the editor.
     Created on : 29-oct-2018, 10:11:20
     Author     : Daw2
 */
+.logo{
+    height: 150px;
+}
+.imgPrincipal{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    height: 350px;
+}
+.subImgPrincipal{
+    background-color:#5b78a7 ;
+    border: black solid;
+    padding: 0;
+}
 .col-1 {
     width: 8.33%;
 }
@@ -58,6 +72,50 @@ and open the template in the editor.
 
 #menu ul{
     list-style:none;
-    margin:0;
-    padding:0;
+    display:flex;
+    background-color:#2e518b;
+}
+
+/* enlaces del menu */
+
+#menu ul a {
+ width: 100%;
+ display:block;
+ color:#fff;
+ text-decoration:none;
+ font-weight:600;
+ font-size:16px;
+ padding:15px;
+ font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ text-transform:uppercase;
+ letter-spacing:1px;
+}
+
+/* items del menu */
+
+#menu ul li {
+ position:relative;
+}
+
+/* efecto al pasar el ratón por los items del menu */
+
+#menu ul li:hover {
+ background:#5b78a7;
+}
+#menu ul ul {
+ display:none;
+ position:absolute;
+ padding:0;
+}
+
+/* items del menu desplegable */
+
+#menu ul ul li {
+ width:150px
+}
+
+/* items del menu desplegable al pasar el ratón */
+
+#menu ul li:hover > ul {
+ display:block;
 }
