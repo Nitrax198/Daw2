@@ -8,7 +8,8 @@ and open the template in the editor.
     Author     : Daw2
 */
 .logo{
-    height: 150px;
+    height: 100px;
+    margin-left: 70px;
 }
 .imgPrincipal{
     display: flex;
@@ -19,7 +20,10 @@ and open the template in the editor.
 .subImgPrincipal{
     background-color:#5b78a7 ;
     border: black solid;
-    padding: 0;
+    padding: 0 !important;
+}
+.login{
+    float: right;
 }
 .col-1 {
     width: 8.33%;
@@ -59,7 +63,7 @@ and open the template in the editor.
 }
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 20px;
 }
 
 .row::after {
@@ -71,15 +75,18 @@ and open the template in the editor.
 /*menu*/
 
 #menu ul{
+    justify-content:space-between;
     list-style:none;
     display:flex;
     background-color:#2e518b;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 /* enlaces del menu */
 
 #menu ul a {
- width: 100%;
+ /*width: 100%;*/
  display:block;
  color:#fff;
  text-decoration:none;
@@ -94,7 +101,7 @@ and open the template in the editor.
 /* items del menu */
 
 #menu ul li {
- position:relative;
+ /*position:relative;*/
 }
 
 /* efecto al pasar el ratón por los items del menu */
