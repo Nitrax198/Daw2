@@ -18,7 +18,7 @@ and open the template in the editor.
     height: 350px;
 }
 .subImgPrincipal{
-    background-color:#5b78a7 ;
+    background-color:#004254 ;
     border: black solid;
     padding: 0 !important;
 }
@@ -78,9 +78,10 @@ and open the template in the editor.
     justify-content:space-between;
     list-style:none;
     display:flex;
-    background-color:#2e518b;
+    background-color:#004254;
     flex-wrap: wrap;
     flex-direction: row;
+    opacity: 0,1;
 }
 
 /* enlaces del menu */
