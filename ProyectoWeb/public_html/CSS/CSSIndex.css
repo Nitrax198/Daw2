@@ -7,9 +7,22 @@ and open the template in the editor.
     Created on : 29-oct-2018, 10:11:20
     Author     : Daw2
 */
-.logo{
-    height: 100px;
+body{
+    background-image: linear-gradient(to bottom, #B2641C 17%, #FF973A 77%);
+    margin: 0 !important;
+}
+.logo1{
+    height: 150px;
     margin-left: 70px;
+    padding: 5px !important;
+}
+.logo2{
+    font-size: 200%;
+    text-align: center;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 70px;
+    padding: 0px !important;
 }
 .imgPrincipal{
     display: flex;
@@ -78,7 +91,7 @@ and open the template in the editor.
     justify-content:space-between;
     list-style:none;
     display:flex;
-    background-color:#004254;
+    background-color:#2F90A7;
     flex-wrap: wrap;
     flex-direction: row;
     opacity: 0,1;
@@ -108,7 +121,7 @@ and open the template in the editor.
 /* efecto al pasar el ratón por los items del menu */
 
 #menu ul li:hover {
- background:#5b78a7;
+ background:#77E5FF;
 }
 #menu ul ul {
  display:none;
