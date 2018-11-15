@@ -30,31 +30,32 @@ function leer_cookie(name) {
         if (cookie[0] === name) {
             return unescape(cookie[1]);
         }else{
-            return unescape(cookie[1]);
+            return null;
         }
     }
 }
 function grabar_cookie(name, valor, fecha) {
-    fecha.toUTCString;
+//    fecha.setTime(fecha.getTime() + (2*60*1000));
+    fecha.toUTCString();
     document.cookie = name + "=" + valor + "; expires=" + fecha;
 }
 
-var titulo= 1;
-fecha = new date;
-fecha.setTime(fecha.getTime() + (2*60*1000));
-fecha.toUTCString;
-alert(fecha);
-//document.cookie = "jope=" + titulo + "; expires="+fecha;
+//var titulo= 1;
+//fecha = new Date;
+//fecha.setTime(fecha.getTime() + (2*60*1000));
+//fecha.toUTCString();
+//alert(fecha);
+//document.cookie = "joke=" + titulo + "; expires="+fecha;
 //alert(document.cookie);
 
-//var caducidad = new Date();
-//var titulo;
-//titulo = leer_cookie("contador");
-//if (titulo === null) {
-//    titulo = 1;
-//} else {
-//    titulo = parseInt(titulo) + 1;
-//}
-//caducidad.setTime(caducidad.getTime() + (1*60*1000));
-//grabar_cookie("contador", titulo, caducidad);
-//document.title = titulo;
+var caducidad = new Date();
+var titulo;
+titulo = leer_cookie("contador");
+if (titulo === null) {
+    titulo = 1;
+} else {
+    titulo = parseInt(titulo) + 1;
+}
+caducidad.setTime(caducidad.getTime() + (2*60*1000));
+grabar_cookie("contador", titulo, caducidad);
+document.title = titulo;
