@@ -17,7 +17,8 @@ body{
     padding: 5px !important;
 }
 .logo2{
-    font-size: 200%;
+    font-family: "Homer Simpson", cursive;
+    font-size: 250%;
     text-align: center;
     height: 50px;
     margin-left: 50px;
@@ -26,11 +27,13 @@ body{
 }
 .imgPrincipal{
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
+    justify-content: space-between;
     margin-top: 100px;
     height: 350px;
 }
 .subImgPrincipal{
+    margin-left: 200px;
     background-color:#004254 ;
     border: black solid;
     padding: 0 !important;
