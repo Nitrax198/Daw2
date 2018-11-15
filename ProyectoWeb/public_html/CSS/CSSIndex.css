@@ -7,16 +7,21 @@ and open the template in the editor.
     Created on : 29-oct-2018, 10:11:20
     Author     : Daw2
 */
+.Altura{
+    height: 400px;
+}
 body{
-    background-image: linear-gradient(to bottom, #B2641C 17%, #FF973A 77%);
+    background-image: linear-gradient(to bottom, #E0F7FA 10%, #E8F8F5 90% );
     margin: 0 !important;
 }
 .logo1{
-    height: 150px;
+    float: left;
+    width:400px;
+    height: 100px;
     margin-left: 70px;
     padding: 5px !important;
 }
-.logo2{
+/*.logo2{
     font-family: "Homer Simpson", cursive;
     font-size: 250%;
     text-align: center;
@@ -24,19 +29,31 @@ body{
     margin-left: 50px;
     margin-top: 70px;
     padding: 0px !important;
-}
+}*/
 .imgPrincipal{
     display: flex;
-    /*justify-content: center;*/
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 100px;
     height: 350px;
 }
 .subImgPrincipal{
-    margin-left: 200px;
+    /*margin-left: 200px;*/
     background-color:#004254 ;
     border: black solid;
     padding: 0 !important;
+}
+
+.notices{
+    margin-top: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+.notice{
+    background: white;
+    width: 33%;
+    padding: 20px !important;
+    margin-left: 20px !important;
 }
 .login{
     float: right;
@@ -49,7 +66,7 @@ body{
 }
 .col-3 {
     width: 25%;
-   }
+}
 .col-4 {
     width: 33.33%;
 }
@@ -94,7 +111,7 @@ body{
     justify-content:space-between;
     list-style:none;
     display:flex;
-    background-color:#2F90A7;
+    background-color:#ABB2B9;
     flex-wrap: wrap;
     flex-direction: row;
     opacity: 0,1;
@@ -103,43 +120,43 @@ body{
 /* enlaces del menu */
 
 #menu ul a {
- /*width: 100%;*/
- display:block;
- color:#fff;
- text-decoration:none;
- font-weight:600;
- font-size:16px;
- padding:15px;
- font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
- text-transform:uppercase;
- letter-spacing:1px;
+    /*width: 100%;*/
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    font-size:16px;
+    padding:15px;
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
 }
 
 /* items del menu */
 
 #menu ul li {
- /*position:relative;*/
+    /*position:relative;*/
 }
 
 /* efecto al pasar el ratón por los items del menu */
 
 #menu ul li:hover {
- background:#77E5FF;
+    background:#B0BEC5;
 }
 #menu ul ul {
- display:none;
- position:absolute;
- padding:0;
+    display:none;
+    position:absolute;
+    padding:0;
 }
 
 /* items del menu desplegable */
 
 #menu ul ul li {
- width:150px
+    width:150px
 }
 
 /* items del menu desplegable al pasar el ratón */
 
 #menu ul li:hover > ul {
- display:block;
+    display:block;
 }
