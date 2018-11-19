@@ -27,11 +27,11 @@
 //    })
 //})
 $(document).ready(function () {
-    $("").click(function (evento) {
-        $("#Nombre").css("visibility", "hidden");
-    })
-    $("a").mouseout(function (evento) {
-        $("#Nombre").css("visibility", "visible");
-    })
-})
+    $("#mostrar").click(function () {
+        $("#imagen").css("visibility", "visible");
+    });
+    $("#ocultar").click(function () {
+        $("#imagen").css("visibility", "hidden");
+    });
+});
 
