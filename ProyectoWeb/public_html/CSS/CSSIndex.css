@@ -36,12 +36,18 @@ body{
     display: flex;
     justify-content: center;
     /*margin-top: 50px;*/
-    height: 600px;
+    height: 700px;
 }
 .subImgPrincipal{
     /*margin-left: 200px;*/
     background-color:#004254 ;
-    border: black solid;
+    border: #B0BEC5 solid;
+    padding: 0 !important;
+}
+.subImgPrincipal2{
+    margin-left: 30px;
+    background-color:#004254 ;
+    border: #B0BEC5 solid;
     padding: 0 !important;
 }
 
@@ -171,13 +177,13 @@ margin-top: 50px;
 #notices th{
     background-color: white;
     width: 33%;
-    border-bottom: 3px solid black;
-    border: 3px solid black;
+    border-bottom: 3px solid #B0BEC5;
+    border: 3px solid #B0BEC5;
 }
 #notices td{
     text-align: center;
-    border: 3px solid black;
-    border-left: 3px solid black;
+    border: 3px solid #B0BEC5;
+    border-left: 3px solid #B0BEC5;
     background-color: white;
     height: 250px;
     width: 33%;
