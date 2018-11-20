@@ -16,9 +16,9 @@ body{
 }
 .logo1{
     float: left;
-    width:400px;
-    height: 100px;
-    margin-left: 70px;
+    width:30%;
+    height: 60px;
+    margin-left: 20px;
     padding: 5px !important;
 }
 /*.logo2{
@@ -33,13 +33,13 @@ body{
 .imgPrincipal{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    height: 350px;
+    /*margin-top: 50px;*/
+    height: 600px;
 }
 .subImgPrincipal{
     /*margin-left: 200px;*/
     background-color:#004254 ;
-    border: black solid;
+    /*border: black solid;*/
     padding: 0 !important;
 }
 
@@ -49,12 +49,12 @@ body{
     display: flex;
     flex-direction: row;
 }
-.notice{
+/*.notice{
     background: white;
     width: 33%;
     padding: 20px !important;
     margin-left: 20px !important;
-}
+}*/
 .login{
     float: right;
 }
@@ -159,4 +159,25 @@ body{
 
 #menu ul li:hover > ul {
     display:block;
+}
+
+#notices {
+width: 100%;
+margin-top: 50px;
+}
+
+#notices th{
+    background-color: white;
+    width: 33%;
+    border-bottom: 3px solid black;
+    border: 3px solid black;
+}
+#notices td{
+    text-align: center;
+    border: 3px solid black;
+    border-left: 3px solid black;
+    background-color: white;
+    height: 250px;
+    width: 33%;
+    
 }
