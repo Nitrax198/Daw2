@@ -30,6 +30,8 @@ body{
     margin-top: 70px;
     padding: 0px !important;
 }*/
+
+/*si quiero pa pagina coma antes descomentar el margin top y el border y cambiar el col que se le está a plicando de 12 a 4*/
 .imgPrincipal{
     display: flex;
     justify-content: center;
@@ -39,7 +41,7 @@ body{
 .subImgPrincipal{
     /*margin-left: 200px;*/
     background-color:#004254 ;
-    /*border: black solid;*/
+    border: black solid;
     padding: 0 !important;
 }
 
