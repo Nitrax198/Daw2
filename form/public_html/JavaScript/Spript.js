@@ -4,10 +4,19 @@
  * and open the template in the editor.
  */
 
+//if(window.jQuery){
+//    alert('se ha cargao');
+//}else{
+//    alert('no se ha cargao');
+//}
 
-$(document).ready(function () {
-    $("#link").click(function (evento) {
-        evento.preventDefault();
-        $("#formulario").reset();
-    });
-});
+//$(document).ready(function () {
+//    $("#link").click(function (evento) {
+//        evento.preventDefault();
+//        $("formulario").js(reset());
+//    });
+//});
+
+function resetear(){
+    document.forms['formulario'].reset();
+}
