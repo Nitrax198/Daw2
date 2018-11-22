@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <script src="Jquery/jquery-3.3.1.js" type="text/javascript"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+        <script src="JavaScript/Spript.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <form action="pagina.php" method="post" name="formulario" onsubmit="return validacionDni()">
+            <input type="text" name="nombre" value="Peru" onchange="validacionNombre()">
+            <br>
+            <input type="text" name="dni" value="54687719M">
+            <br>
+            <input type="submit" value="enviar">
+            <button type="button" onclick="reset()">resetear</button>
+            <br>
+            <img src="Imagenes/a1ca505d428e20ba129e47c97522f9ee.jpg" alt="coche" onclick="enviar()"/>
+            <img src="Imagenes/3ee77597ff926af6537cdb4a6d9f14fb.jpg" alt="coche2" onclick="reset()"/>
+            <br>
+        </form>
+        <!--<img src="Imagenes/3ee77597ff926af6537cdb4a6d9f14fb.jpg" alt="enlace" id="link"/>-->
+    </body>
+</html>
