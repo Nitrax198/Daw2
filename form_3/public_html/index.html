@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <script src="Jquery/jquery-3.3.1.js" type="text/javascript"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+        <script src="JavaScript/Spript.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!--hacer un formulario con un radio, una lista, un boton guardar,checkbox,textarea--> 
+        <form action="pagina.php" method="post" name="formulario" onsubmit="return validacionDni()">
+            <input type="text" name="nombre" value="Peru" onchange="validacionNombre()">
+            <br>
+            <input type="radio" name="pago" value="1" id="w">
+            <label for="w">w</label><br>
+            <input type="radio" name="pago" value="2" id="y" checked>
+            <label for="y">y</label><br>
+            <input type="radio" name="pago" value="3" id="z">
+            <label for="z">z</label><br>
+            <input type="radio" name="pago" value="4" id="x">
+            <label for="x">x</label><br>
+            <br>
+            <input type="checkbox" name="regalos" value="1" id="a" > 
+            <label for="a"> a</label><br /> 
+            <input type="checkbox" name="regalos" value="2" id="b" > 
+            <label for="b">b</label><br /> 
+            <input type="checkbox" name="regalos" value="3" id="c" disabled> 
+            <label for="c">c</label><br /> 
+            <input type="checkbox" name="regalos" value="4" id="d" > 
+            <label for="d">d</label><br /> 
+            <br>
+            <select name="miLista" size="7"> 
+                <option value="0">Andorra</option> 
+                <option value="1">España</option> 
+                <option value="2">Francia</option> 
+                <option value="3">Italia</option> 
+                <option value="4">Portugal</option> 
+                <option value="5">Portugal</option> 
+                <option value="6">Portugal</option> 
+            </select>
+            <br>
+            <input type="submit" value="enviar">
+            <button type="button" onclick="reset()">resetear</button>
+            <br>
+            <img src="Imagenes/a1ca505d428e20ba129e47c97522f9ee.jpg" alt="coche" onclick="enviar()"/>
+            <img src="Imagenes/3ee77597ff926af6537cdb4a6d9f14fb.jpg" alt="coche2" onclick="reset()"/>
+            <br>
+        </form>
+        <!--<img src="Imagenes/3ee77597ff926af6537cdb4a6d9f14fb.jpg" alt="enlace" id="link"/>-->
+    </body>
+</html>
