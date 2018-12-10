@@ -206,7 +206,7 @@ body{
     border: 3px solid #B0BEC5;
 }
 #notices td{
-    text-align: center;
+    text-align: center; 
     border: 3px solid #B0BEC5;
     border-left: 3px solid #B0BEC5;
     background-color: white;
