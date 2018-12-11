@@ -7,9 +7,6 @@ and open the template in the editor.
     Created on : 29-oct-2018, 10:11:20
     Author     : Daw2
 */
-.Altura{
-    height: 400px;
-}
 body{
     background-image: linear-gradient(to bottom, #E0F7FA 10%, #E8F8F5 90% );
     margin: 0 !important;
