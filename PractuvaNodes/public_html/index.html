@@ -11,19 +11,35 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <p id="parrafo_1"> Primer Parrafo</p>
+        <input type="button" onclick="crear()" value="crear"> 
+        <input type="button" onclick="borrar()" value="borrar"> 
+        <p> Primer Parrafo</p>
         <p> Hacer un script para</p>
         <p> Primer paso, crear un nodo de tipo texto, con el texto introducido por teclado</p>
         <p> Segundo paso, crear un nodo de tipo parrafo</p>
         <p> Tercero paso, hacer el texto hijo del parrafo</p>
         <p> cuarto paso, añadir el parrafo creado a continuación del parrafo existente en el body</p>
-    
+        <div>kjdsflkjds</div>
+        <p>hadshasgdjh</p>
         <script>
+        function crear(){
+            var contenido = prompt('introduce el contenido del parrafo','hola mundo');
+            var posicion = prompt('introduce la posicion del parrafo','3');
             var mi_parrafo = document.createElement("P");
-            var contenido = prompt('escribe el contenido del texto');
-            var mi_texto = document.createTextNode("contenido");
-            alert(trNode.nodeName);
-            alert(trNode.nodeValue);
+            var mi_texto = document.createTextNode(contenido);
+            mi_parrafo.appendChild(mi_texto);
+            var parrafos = document.getElementsByTagName("P");
+            if(posicion>parrafos.length){
+                document.body.insertBefore(mi_parrafo,(parrafos[parrafos.length-1]).nextSibling);
+            }else{
+                document.body.insertBefore(mi_parrafo,(parrafos[posicion]));
+            }
+//            document.body.insertBefore(mi_parrafo,(parrafos[posicion-1]).nextSibling);
+        }
+        function borrar(){
+            var selecion = prompt('introduce la posicion del parrafo que quieres borrar(Empezand por 0)','0');
+            document.body.removeChild(document.getElementsByTagName('P')[selecion]);
+        }
         </script>
     </body>
 </html>
