@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hola Mund By Akara</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <input type="button" onclick="crear()" value="crear"> 
+        <input type="button" onclick="cambiar()" value="Cambiar"> 
+        <input type="button" onclick="cambiar2()" value="CambiarIMG2"> 
+        <input type="button" onclick="Multiplicar()" value="Multiplicar">
+        <img src="Imagenes/IMGNoir.jpg" alt="imgNoir" height="300" width="300"/>
+        <script>
+        function crear(){
+            var imgCalle = document.createElement("IMG");
+            var atrCalle = document.createAttribute("src");
+            atrCalle.nodeValue = "Imagenes/street.png";
+            imgCalle.setAttributeNode(atrCalle);
+            document.body.insertBefore(imgCalle , document.getElementsByTagName("IMG")[0]);
+        } 
+        function cambiar(){
+            var imgCalle = document.getElementsByTagName("IMG")[0];
+            imgCalle.setAttribute("src","Imagenes/street.png");
+        } 
+        function cambiar2(){
+            var imgCalle = document.getElementsByTagName("IMG")[1];
+            imgCalle.setAttribute("src","Imagenes/IMGNoir.jpg");
+        } 
+       function Multiplicar(){
+           for (var i = 0; i < 100; i++) {
+                var imgCalle = document.createElement("IMG");
+            var atrCalle = document.createAttribute("src");
+              atrCalle.nodeValue = "Imagenes/street.png";
+                imgCalle.setAttributeNode(atrCalle);
+                document.body.insertBefore(imgCalle , document.getElementsByTagName("IMG")[0]);
+            }           
+        }
+        </script>
+    </body>
+</html>
+
