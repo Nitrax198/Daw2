@@ -14,6 +14,8 @@ and open the template in the editor.
     <body>
         <form>
             <input type="button" value="Crear" onclick="crear()">
+            <input type="button" value="CrearContador" onclick="crearContador()">
+            <input type="button" value="Sumar" onclick="sumarContador()">
             <input type="button" value="Borrar" onclick="borrar()">
             <input type="button" value="Cambiar" onclick="cambiar()">
             <input type="button" value="Mostrar" onclick="mostrar()">
@@ -23,6 +25,14 @@ and open the template in the editor.
                 var nombre = prompt('Escriba el nombre');
                 var valor = prompt('Escriba el valor');
                 window.localStorage.setItem(nombre, valor);
+                var creacion = new Date();
+            }
+            function crearContador(){
+                var nombre = prompt('Escriba el nombre');
+                window.localStorage.setItem(nombre, 0);
+                var creacionC = new Date();
+                var minutosC = creacionC.getMinutes()+3;
+                window.localStorage.setItem('minutosfinal', minutosC);
             }
             function borrar(){
                 var nombre = prompt('Escriba el nombre del elemento que uqiere eliminar');
@@ -32,10 +42,24 @@ and open the template in the editor.
                 var nombre = prompt('Escriba el nombre del elemento que desea ver');
                 alert(window.localStorage.getItem(nombre));
             }
+            function sumarContador(){
+                var valor = window.localStorage.getItem(nombre);
+                valor++;
+                window.localStorage.setItem(nombre, valor);
+            }
             function cambiar(){
                 var nombre = prompt('Escriba el nombre del valor uqe desea cambiar');
                 var valor = prompt('Escriba el nuevo valor');
                 window.localStorage.setItem(nombre, valor);
+            }
+            
+            var minF = new Date();
+            window.localStorage.setItem('minutosInicial', (minF.getMinutes()));
+            
+            var minI = window.localStorage.getItem('minutosInicial')
+            var minP = window.localStorage.getItem('minutosfinal')
+            if(minI===minP){
+                window.localStorage.clear();
             }
         </script>
     </body>
